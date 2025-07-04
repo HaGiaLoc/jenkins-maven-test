@@ -2,12 +2,19 @@
  * Lớp GradeConverter dùng để chuyển đổi điểm số thành xếp loại chữ cái.
  */
 public final class GradeConverter {
+    /** Điểm tối đa hợp lệ. */
     private static final int MAX_SCORE = 100;
+    /** Điểm tối thiểu hợp lệ. */
     private static final int MIN_SCORE = 0;
+    /** Điểm tối thiểu để đạt loại A. */
     private static final int MIN_A_SCORE = 90;
+    /** Điểm tối thiểu để đạt loại B. */
     private static final int MIN_B_SCORE = 80;
+    /** Điểm tối thiểu để đạt loại C. */
     private static final int MIN_C_SCORE = 70;
+    /** Điểm tối thiểu để đạt loại D. */
     private static final int MIN_D_SCORE = 60;
+    /** Điểm tối thiểu để đạt loại E. */
     private static final int MIN_E_SCORE = 50;
 
     /**
