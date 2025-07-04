@@ -1,5 +1,7 @@
-
-public class GradeConverter {
+/**
+ * Lớp GradeConverter dùng để chuyển đổi điểm số thành xếp loại chữ cái.
+ */
+public final class GradeConverter {
     private static final int MAX_SCORE = 100;
     private static final int MIN_SCORE = 0;
     private static final int MIN_A_SCORE = 90;
@@ -8,11 +10,16 @@ public class GradeConverter {
     private static final int MIN_D_SCORE = 60;
     private static final int MIN_E_SCORE = 50;
 
-    public String convert(int score) {
-        if ((score > MAX_SCORE) || (score < MIN_SCORE)) {
+    /**
+     * Phương thức chuyển đổi điểm số thành xếp loại chữ cái.
+     *
+     * @param score Điểm số đầu vào (0-100).
+     * @return Chuỗi xếp loại chữ cái tương ứng (A, B, C, D, E hoặc "Invalid").
+     */
+    public String convert(final int score) {
+        if (score > MAX_SCORE || score < MIN_SCORE) {
             return "Invalid";
-        }
-        else if (score >= MIN_A_SCORE) {
+        } else if (score >= MIN_A_SCORE) {
             return "A";
         } else if (score >= MIN_B_SCORE) {
             return "B";
@@ -23,9 +30,7 @@ public class GradeConverter {
         } else if (score >= MIN_E_SCORE) {
             return "E";
         } else {
-            return "Invalid"; 
+            return "Invalid";
         }
-
-
     }
 }
